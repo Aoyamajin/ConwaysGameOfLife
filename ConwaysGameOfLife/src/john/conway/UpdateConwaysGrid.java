@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class UpdateConwaysGrid {
 	private static final String RESULTS_DIRECTORY = "results";
-	private static final String RESULTS_FILE_NAME = "conways_game_of_life_results_";
+	private static final String RESULTS_FILE_NAME = "conways_game_of_life_results_%s.txt";
 	private static final String TIMESTAMP_FORMAT = "yyyyMMddHHmmssSSS";
     
 	private ConwaysGameOfLifeProperties conwaysGameOfLifeProperties;
