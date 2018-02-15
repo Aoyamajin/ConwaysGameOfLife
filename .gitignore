@@ -1,0 +1,7 @@
+
+ConwaysGameOfLife/.project
+ConwaysGameOfLife/.classpath
+ConwaysGameOfLife/.settings/org.eclipse.jdt.core.prefs
+ConwaysGameOfLife/bin/john/conway/ConwaysGameOfLife.class
+ConwaysGameOfLife/bin/john/conway/ConwaysGameOfLifeProperties.class
+ConwaysGameOfLife/bin/john/conway/UpdateConwaysGrid.class
