@@ -15,8 +15,7 @@ public class UpdateConwaysGrid {
 	private static final String RESULTS_DIRECTORY = "results";
 	private static final String RESULTS_FILE_NAME = "conways_game_of_life_results_";
 	private static final String TIMESTAMP_FORMAT = "yyyyMMddHHmmssSSS";
-	private static final String FILE_TYPE = ".txt";
-
+    
 	private ConwaysGameOfLifeProperties conwaysGameOfLifeProperties;
 	private String[][] conwaysInitialArray;
 	private String[][] conwaysFutureArray;
@@ -137,7 +136,7 @@ public class UpdateConwaysGrid {
 	private void createResultsFile(String resultsToWrite) throws IOException {
 		File directory = new File(RESULTS_DIRECTORY);
 		directory.mkdirs();
-		File resultsFile = new File(directory, RESULTS_FILE_NAME + getDateAsString() + FILE_TYPE);
+		File resultsFile = new File(directory, String.format(RESULTS_FILE_NAME, getDateAsString()));
 		resultsFile.createNewFile();
 		Files.write(resultsFile.toPath(), resultsToWrite.getBytes());
 	}
